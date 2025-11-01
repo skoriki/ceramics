@@ -18,26 +18,40 @@
         <h2>Добавление нового товара</h2>
 
         <form action="/add_item" method="post" class="add-item-form">
-            <label>Тип товара (type_id):</label>
-            <input type="number" name="type_id" required>
+            <div class="form-row">
+        <label>Тип товара (type_id):</label>
+        <input type="number" name="type_id" required>
+    </div>
 
-            <label>Серия (seria_id):</label>
-            <input type="number" name="seria_id">
+    <div class="form-row">
+        <label>Серия (seria_id):</label>
+        <input type="number" name="seria_id">
+    </div>
 
-            <label>Цена рекомендованная (price_set):</label>
-            <input type="number" step="0.01" name="price_set">
+    <div class="form-row">
+        <label>Цена рекомендованная (price_set):</label>
+        <input type="number" step="0.01" name="price_set">
+    </div>
 
-            <label>Комментарий:</label>
-            <textarea name="comment" rows="3"></textarea>
+    <div class="form-row">
+        <label>Комментарий:</label>
+        <textarea name="comment" rows="3"></textarea>
+    </div>
 
-            <label>Объем (volume):</label>
-            <input type="number" step="0.01" name="volume">
+    <div class="form-row">
+        <label>Объем (volume):</label>
+        <input type="number" step="0.01" name="volume">
+    </div>
 
-            <label>Высота (height):</label>
-            <input type="number" step="0.01" name="height">
+    <div class="form-row">
+        <label>Высота (height):</label>
+        <input type="number" step="0.01" name="height">
+    </div>
 
-            <label>Ширина (width):</label>
-            <input type="number" step="0.01" name="width">
+    <div class="form-row">
+        <label>Ширина (width):</label>
+        <input type="number" step="0.01" name="width">
+    </div>
 
             <button type="submit" class="submit-btn">Сохранить товар</button>
         </form>
