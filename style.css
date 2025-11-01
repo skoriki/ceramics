@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     font-size: 10pt;
     background-color: #f8f9fa;
     display: flex;
@@ -109,6 +109,29 @@ p {
     font-size: 11px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+    .form-table {
+    border-collapse: collapse; /* убираем линии таблицы */
+    width: 100%;
+}
+
+.form-table td {
+    padding: 5px 10px;  /* расстояние между колонками */
+    vertical-align: middle;
+}
+
+.form-table label {
+    font-weight: bold;
+    width: 200px; /* фиксированная ширина для первой колонки */
+    display: inline-block;
+}
+
+.form-table input,
+.form-table textarea {
+    width: 100%;  /* растягиваем поле на всю ширину второй колонки */
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .submit-btn:hover {
