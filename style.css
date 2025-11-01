@@ -84,29 +84,21 @@ p {
     width: 100%;
 }
 /* === Форма добавления товара === */
-.add-item-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.add-item-form .form-row {
+    display: flex;          /* Горизонтальное расположение label и input */
+    align-items: center;    /* Вертикальное выравнивание */
+    margin-bottom: 10px;    /* Отступ между строками */
 }
 
 .add-item-form label {
+    width: 200px;           /* Ширина колонки с названием поля */
     font-weight: bold;
-    color: #333;
 }
 
 .add-item-form input,
 .add-item-form textarea {
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: Verdana, sans-serif;
-    font-size: 10px;
-}
+    flex: 1;                /* Остальное пространство для поля ввода */
 
-.add-item-form textarea {
-    resize: vertical;
-}
 
 .submit-btn {
     background-color: #0a9b9b;
