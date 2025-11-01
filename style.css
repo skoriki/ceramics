@@ -32,9 +32,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    justify-content: flex-start; /* 👈 Было center, теперь контент прижат вверх */
+    padding: 40px 20px;          /* Увеличили верхний отступ */
     text-align: center;
+    margin-top: 20px;            /* Дополнительное смещение вниз от шапки */
 }
 
 h1 {
