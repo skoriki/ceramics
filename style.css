@@ -83,3 +83,43 @@ p {
     height: 30px;
     width: 100%;
 }
+/* === Форма добавления товара === */
+.add-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-item-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.add-item-form input,
+.add-item-form textarea {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+}
+
+.add-item-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #0a9b9b;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #087b7b;
+}
+
