@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление нового товара</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Верхняя полоса -->
+    <div class="top-bar">
+        <img src="img/skottery_white.png" alt="Логотип" class="logo">
+    </div>
+
+    <!-- Центральный блок с формой -->
+    <div class="content">
+        <h2>Добавление нового товара</h2>
+
+        <form action="/add_item" method="post" class="add-item-form">
+            <label>Тип товара (type_id):</label>
+            <input type="number" name="type_id" required>
+
+            <label>Серия (seria_id):</label>
+            <input type="number" name="seria_id">
+
+            <label>Цена за комплект (price_set):</label>
+            <input type="number" step="0.01" name="price_set">
+
+            <label>Цена продажи (price_sold):</label>
+            <input type="number" step="0.01" name="price_sold">
+
+            <label>Тип оплаты (payment_id):</label>
+            <input type="number" name="payment_id">
+
+            <label>Комментарий:</label>
+            <textarea name="comment" rows="3"></textarea>
+
+            <label>Дата продажи (sold_at):</label>
+            <input type="datetime-local" name="sold_at">
+
+            <label>Объем (volume):</label>
+            <input type="number" step="0.01" name="volume">
+
+            <label>Высота (height):</label>
+            <input type="number" step="0.01" name="height">
+
+            <label>Ширина (width):</label>
+            <input type="number" step="0.01" name="width">
+
+            <label>ID пользователя (user_id):</label>
+            <input type="number" name="user_id">
+
+            <button type="submit" class="submit-btn">Сохранить товар</button>
+        </form>
+    </div>
+
+    <!-- Нижняя полоса -->
+    <div class="bottom-bar"></div>
+</body>
+</html>
